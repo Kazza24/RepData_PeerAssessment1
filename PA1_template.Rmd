@@ -1,11 +1,12 @@
 ---
 title: "Reproducible Research Assig 1"
 author: "Karin Kolbe"
-date: "08/11/2020"
-output: html_document: 
+date: "08/Nov/2020"
+output: 
+        html_document: 
+                keep_md: true
 
 ---
-
 
 
 ## Loading and preprocessing the data

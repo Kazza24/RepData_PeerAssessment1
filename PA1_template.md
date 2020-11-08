@@ -1,11 +1,12 @@
 ---
 title: "Reproducible Research Assig 1"
 author: "Karin Kolbe"
-date: "08/11/2020"
-output: html_document: 
+date: "08/Nov/2020"
+output: 
+        html_document: 
+                keep_md: true
 
 ---
-
 
 
 ## Loading and preprocessing the data
@@ -86,7 +87,7 @@ ggplot(activity1, aes(x = daily)) +
     labs(title = "Daily Steps", x = "Steps", y = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-63](figure/unnamed-chunk-63-1.png)
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
 
 
 ```r
@@ -147,7 +148,7 @@ with(activity2, plot(interval,meanSteps, type="l",lty=1,lwd=2,col="blue",
      main="Time Series of the 5-minute Intervals"))
 ```
 
-![plot of chunk unnamed-chunk-67](figure/unnamed-chunk-67-1.png)
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
 
 
 ```r
@@ -212,7 +213,7 @@ ggplot(activity4, aes(x = daily)) +
     labs(title = "Daily Steps", x = "Interval", y = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-71](figure/unnamed-chunk-71-1.png)
+![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
 
 
 
@@ -281,7 +282,7 @@ ggplot(activity6, aes(interval,meanSteps,color=dayType)) +
         facet_wrap(dayType~., ncol = 1, nrow=2)
 ```
 
-![plot of chunk unnamed-chunk-74](figure/unnamed-chunk-74-1.png)
+![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png)
 
 From this plot we can see that people take more steps earlier on weekdays, but 
 then are more stationary during the day. 
